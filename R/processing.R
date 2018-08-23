@@ -1041,7 +1041,6 @@ run_qgis <- function(alg = NULL, ..., params = NULL, load_output = FALSE,
     ))
   }
 
-
   # construct a parameter-argument list using get_args_man and user input
   params <- pass_args(alg, ..., params = params, NA_flag = NA_flag,
                       qgis_env = qgis_env)
@@ -1112,6 +1111,10 @@ run_qgis <- function(alg = NULL, ..., params = NULL, load_output = FALSE,
     params_out <- params[out_names]
     # just keep the files which were actually specified by the user
     out_files <- params_out[params_out != "None"]
+    if (length(out_files) == 0) {
+      warning("To use load_output you must at least specify one output file. ",
+              "Returning empty list.")
+    }
     ls_1 <- lapply(out_files, function(x) {
       # even if the user only specified an output name without an output
       # directory, we have made sure above that the output is written to the
