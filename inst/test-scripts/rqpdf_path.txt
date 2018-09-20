@@ -1,0 +1,12 @@
+Adding qpdf to PATH (Windows10):
+1. Systemsteuerung - System und Sicherheit - System - Erweiterte Systemeinstellungen - Umgebungsvariablen
+2. Systemvariablen - Path bearbeiten
+   C:\Python27;C:\Program Files (x86)\qpdf-5.1.2\bin (nach einem ; kein Leerzeichen!!!, z.B. C:\Python27; C:\Program Files (x86)\qpdf-5.1.2\bin 
+   denn dann wird der Pfad nicht erkannt)
+3. in R: 
+R> Sys.which(Sys.getenv("R_QPDF", "qpdf"))
+
+qpdf 
+"C:\\PROGRA~2\\QPDF-5~1.2\\bin\\qpdf.exe" 
+
+see also: http://stackoverflow.com/questions/11738844/qpdf-exe-for-compactpdf
