@@ -89,14 +89,15 @@ NULL
 #' @name comm
 #' @description A community matrix with species as columns and sites as rows.
 #'   The rownames correspond to the id which can be also found in
-#'   [random_points]. Please note that in fact 100 sites have been
-#'   visited but in 16 of them no species could be found (see again
-#'   [random_points]).
+#'   [random_points]. Please note that in fact 100 sites have been visited but
+#'   in 16 of them no species could be found (see again [random_points]).
 #' @format An dataframe with 84 sites (rows) and 69 species (columns). Species
-#'   presence is given in percentage points.
+#'   presence is given in percentage points (%). Note that the cover of all
+#'   species in one plot can be >100% due to overlapping cover values of
+#'   indivdiual plants.
 #'
 #' @references Muenchow, J., Bräuning, A., Rodríguez, E.F. & von Wehrden, H.
-#' (2013): Predictive mapping of species richness and plant species'
-#' distributions of a Peruvian fog oasis along an altitudinal gradient.
-#' Biotropica 45, 5, 557-566, doi: 10.1111/btp.12049.
+#'   (2013): Predictive mapping of species richness and plant species'
+#'   distributions of a Peruvian fog oasis along an altitudinal gradient.
+#'   Biotropica 45, 5, 557-566, doi: 10.1111/btp.12049.
 NULL
