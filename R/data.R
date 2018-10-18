@@ -1,9 +1,9 @@
 #' @title Random points.
 #'
 #' @name random_points
-#' @description An [sf] (EPSG:32717) object
-#'   with 100 randomly sampled points (stratified by altitude). For more
-#'   details, please refer to Muenchow et al. (2013).
+#' @description An [sf] (EPSG:32717) object with 100 randomly sampled points
+#'   (stratified by altitude). For more details, please refer to Muenchow et al.
+#'   (2013).
 #'
 #' @format An [sf] object with 100 rows and 3 variables:
 #' \describe{
@@ -23,9 +23,9 @@ NULL
 #' @title Digital elevation model (DEM) of the Mongón study area.
 #' @name dem
 #'
-#' @description A [raster::raster()] object (EPSG:32717) representing
-#'   altitude (ASTER GDEM, LP DAAC 2012).  For more details, please refer to
-#'   Muenchow et al. (2013).
+#' @description A [raster::raster()] object (EPSG:32717) representing altitude
+#'   (ASTER GDEM, LP DAAC 2012).  For more details, please refer to Muenchow et
+#'   al. (2013).
 #'
 #' @format A [raster::raster()] with 117 rows and 117 columns:
 #' \describe{
